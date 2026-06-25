@@ -20,14 +20,17 @@ Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 | Tales Cavalcanti | 2      |
 | _(nome)_         | 3      |
 | Pedro Henrique   | 4      |
-| _(nome)_         | 5      |
+| Filipe Sousa     | 5      |
 
 ## Como o repositório pratica o próprio tema
 
-5. Boas práticas e erros comuns
-   Adotar o Git Flow não garante, sozinho, um repositório saudável. A qualidade vem de bons hábitos no dia a dia. Este tópico reúne as boas práticas mais valorizadas no mercado e os erros que mais aparecem nas equipes.
-   Mensagens de commit: Conventional Commits
-   Mensagens de commit claras facilitam entender o histórico do projeto. O padrão mais usado é o Conventional Commits, com a estrutura:
+---
+
+## 5. Boas práticas e erros comuns
+
+Adotar o Git Flow não garante, sozinho, um repositório saudável. A qualidade vem de bons hábitos no dia a dia. Este tópico reúne as boas práticas mais valorizadas no mercado e os erros que mais aparecem nas equipes.
+Mensagens de commit: Conventional Commits
+Mensagens de commit claras facilitam entender o histórico do projeto. O padrão mais usado é o Conventional Commits, com a estrutura:
 
 ```
 tipo(escopo opcional): descrição
@@ -71,20 +74,80 @@ git tag -a v1.2.0 -m "Versão 1.2.0"
 git push origin v1.2.0
 ```
 
-Boas práticas gerais
-Commits pequenos e atômicos — cada commit faz uma coisa só.
-Commit com frequência, mas só de código que funciona.
-Nunca commitar segredos (senhas, chaves de API) — use `.gitignore` e variáveis de ambiente.
-Manter a `main` sempre estável — só código testado entra nela.
-Deletar branches já mescladas para não poluir o repositório.
-Escrever um bom README explicando o projeto.
-Erros comuns
-Branches gigantes e de vida longa — quanto mais tempo aberta, mais conflitos no merge.
-Mensagens de commit vagas — "ajustes", "wip", "teste" não dizem nada sobre a mudança.
-Commitar arquivos que não deveriam ir — `node_modules`, builds, arquivos de configuração local.
-`git push --force` na branch compartilhada — pode apagar o trabalho dos colegas.
-Misturar várias mudanças não relacionadas no mesmo commit ou PR.
-Ignorar o code review — aprovar PRs sem ler de verdade.
-Não atualizar a branch com a `develop`, acumulando divergências.
-Resumo
-O Git Flow funciona bem quando acompanhado de disciplina: mensagens padronizadas (Conventional Commits), versionamento claro (SemVer), commits pequenos e atenção aos erros clássicos. São esses detalhes que separam um repositório amador de um profissional.
+# Boas Práticas Gerais
+
+✅ **Commits pequenos e atômicos**
+
+- Cada commit deve realizar apenas uma mudança específica.
+
+✅ **Commitar com frequência**
+
+- Faça commits regulares, mas somente de código que esteja funcionando.
+
+✅ **Nunca commitar segredos**
+
+- Senhas, tokens e chaves de API devem ficar fora do repositório.
+- Utilize `.gitignore` e variáveis de ambiente.
+
+✅ **Manter a `main` sempre estável**
+
+- Apenas código testado e validado deve ser integrado.
+
+✅ **Remover branches já mescladas**
+
+- Evita poluição visual e facilita a manutenção do repositório.
+
+✅ **Escrever um bom README**
+
+- Documente o objetivo, instalação, uso e principais características do projeto.
+
+---
+
+### Erros Comuns
+
+❌ **Branches muito grandes e de longa duração**
+
+- Quanto mais tempo uma branch permanece aberta, maiores são as chances de conflitos no merge.
+
+❌ **Mensagens de commit vagas**
+
+- Evite mensagens como:
+  - `ajustes`
+  - `wip`
+  - `teste`
+- Prefira descrições claras e objetivas.
+
+❌ **Commitar arquivos desnecessários**
+
+- Exemplos:
+  - `node_modules`
+  - arquivos de build
+  - configurações locais da máquina
+
+❌ **Usar `git push --force` em branches compartilhadas**
+
+- Pode sobrescrever ou apagar o trabalho de outros colaboradores.
+
+❌ **Misturar mudanças não relacionadas**
+
+- Evite incluir várias funcionalidades ou correções diferentes no mesmo commit ou PR.
+
+❌ **Ignorar o Code Review**
+
+- Não aprove Pull Requests sem revisar cuidadosamente as alterações.
+
+❌ **Não sincronizar com a `develop`**
+
+- Deixar de atualizar a branch frequentemente aumenta divergências e conflitos.
+
+---
+
+## Resumo
+
+O **Git Flow** funciona melhor quando combinado com:
+
+- 📝 Mensagens padronizadas (**Conventional Commits**)
+- 🔖 Versionamento consistente (**SemVer**)
+- 🔄 Commits pequenos e frequentes
+- 👀 Revisão cuidadosa de código
+- 🌱 Boa gestão de branches
