@@ -18,7 +18,7 @@ Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 | _(nome)_ | 1 |
 | Tales Cavalcanti | 2 |
 | _(nome)_ | 3 |
-| _(nome)_ | 4 |
+| Pedro Henrique | 4 |
 | _(nome)_ | 5 |
  
 ## Como o repositório pratica o próprio tema
