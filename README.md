@@ -16,7 +16,7 @@ Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 
 | Integrante       | Tópico |
 | ---------------- | ------ |
-| _(nome)_         | 1      |
+| Otávio Leão      | 1      |
 | Tales Cavalcanti | 2      |
 | _(nome)_         | 3      |
 | Pedro Henrique   | 4      |
