@@ -25,7 +25,14 @@ Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 ## Como o repositório pratica o próprio tema
 
 Cada arquivo foi adicionado em um commit individual, demonstrando na prática o fluxo de contribuição estudado neste trabalho.
+---
 
+# 1. O que é Git Flow e por que surgiu?
+
+## Origem
+O Git Flow é basicamente um manual de organização para equipes que criam software. Ele foi criado em 2010 por Vincent Driessen para resolver um problema prático: a bagunça na hora de juntar o trabalho de várias pessoas.
+
+Antes dele, cada programador fazia as coisas do seu jeito. O resultado era dor de cabeça: o trabalho de um atropelava o do outro, e ninguém sabia ao certo o que estava realmente pronto para ser entregue ao cliente. O Git Flow surgiu para colocar ordem na casa, definindo regras claras de como separar e juntar as partes do projeto sem gerar caos.
 ---
 
 # 5. Boas práticas e erros comuns
