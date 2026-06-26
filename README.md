@@ -18,7 +18,7 @@ Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 | ---------------- | ------ |
 | _(nome)_         | 1      |
 | Tales Cavalcanti | 2      |
-| _(nome)_         | 3      |
+| Victor Julius    | 3      |
 | Pedro Henrique   | 4      |
 | Filipe Sousa     | 5      |
 
