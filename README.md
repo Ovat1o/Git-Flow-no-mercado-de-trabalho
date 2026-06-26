@@ -69,6 +69,10 @@ O modelo define cinco tipos de branches, divididos entre **permanentes** e **tem
 4. A release é testada, ajustada e enviada para `main` (vira uma versão oficial) e também de volta para `develop`.
 5. Se um bug crítico aparece em produção, um `hotfix/` corrige direto a partir de `main`.
 
+## Por que ainda é relevante
+
+Mesmo com alternativas mais simples surgindo, o Git Flow continua sendo ensinado e usado porque oferece uma estrutura disciplinada — especialmente útil em projetos com **versões bem definidas**, **prazos de release** e **equipes maiores**.
+
 ---
 
 # 3. Pull Requests, Code Review e CiCd
