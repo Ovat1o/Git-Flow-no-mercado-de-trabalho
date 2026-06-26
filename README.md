@@ -42,25 +42,6 @@ O Git Flow organiza o desenvolvimento separando claramente:
 
 Isso dá previsibilidade ao processo e facilita o trabalho de várias pessoas no mesmo projeto.
 
-## Os tipos de branches
-
-O modelo define cinco tipos de branches, divididos entre **permanentes** e **temporárias**.
-
-### Branches permanentes
-
-| Branch | Função |
-|--------|--------|
-| `main` (ou `master`) | Contém o código em produção. Cada commit aqui representa uma versão liberada. |
-| `develop` | Reúne todo o trabalho concluído que entrará na próxima versão. É a base de integração. |
-
-### Branches temporárias
-
-| Branch | Origem | Volta para | Função |
-|--------|--------|-----------|--------|
-| `feature/*` | `develop` | `develop` | Desenvolvimento de novas funcionalidades. |
-| `release/*` | `develop` | `develop` e `main` | Preparação de uma nova versão (ajustes finais, testes). |
-| `hotfix/*` | `main` | `develop` e `main` | Correção urgente de um bug em produção. |
-
 ---
 
 # 3. Pull Requests, Code Review e CiCd
