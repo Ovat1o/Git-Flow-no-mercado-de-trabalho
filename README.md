@@ -2,7 +2,7 @@
 
 Projeto acadêmico em grupo sobre o uso do **Git Flow** em ambientes profissionais de desenvolvimento de software.
 
-## Tópicos
+## Tópicos:
 
 Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 
@@ -12,7 +12,7 @@ Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 4. [Git Flow vs. alternativas modernas](04-git-flow-vs-alternativas.md)
 5. [Boas práticas e erros comuns](05-boas-praticas-e-erros-comuns.md)
 
-## Integrantes
+## Integrantes:
 
 | Integrante       | Tópico |
 | ---------------- | ------ |
@@ -26,12 +26,12 @@ Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 
 # 1. O que é Git Flow e por que surgiu?
 
-## Origem
+## Origem:
 O Git Flow é basicamente um manual de organização para equipes que criam software. Ele foi criado em 2010 por Vincent Driessen para resolver um problema prático: a bagunça na hora de juntar o trabalho de várias pessoas.
 
 Antes dele, cada programador fazia as coisas do seu jeito. O resultado era dor de cabeça: o trabalho de um atropelava o do outro, e ninguém sabia ao certo o que estava realmente pronto para ser entregue ao cliente. O Git Flow surgiu para colocar ordem na casa, definindo regras claras de como separar e juntar as partes do projeto sem gerar caos.
 
-## O problema que ele resolve
+## O problema que ele resolve:
 
 O Git Flow organiza o desenvolvimento separando claramente:
 
@@ -42,15 +42,15 @@ O Git Flow organiza o desenvolvimento separando claramente:
 
 Isso dá previsibilidade ao processo e facilita o trabalho de várias pessoas no mesmo projeto.
 
----
+## Os tipos de branches:
 
 # 3. Pull Requests, Code Review e CiCd
 
-No mercado de trabalho, raramente alguém envia código direto para a `develop` ou `main`. O caminho passa por **Pull Requests**, **revisão de código** e **pipelines automatizados**. Essas três práticas são o que transformam o Git Flow em um processo confiável.
+### Branches permanentes:
 
 ## O Pull Request (PR)
 
-Um Pull Request é um pedido para integrar o código de uma branch em outra (por exemplo, de `feature/login` para `develop`). Ele não é só um "botão de merge" — é um espaço de **discussão e validação**.
+### Branches temporárias:
 
 Um bom PR costuma ter:
 
