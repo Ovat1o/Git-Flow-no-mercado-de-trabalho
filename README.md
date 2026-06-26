@@ -16,7 +16,7 @@ Cada integrante do grupo contribuiu com um tópico, em um commit próprio:
 
 | Integrante       | Tópico |
 | ---------------- | ------ |
-| Otávio Leão      | 1      |
+| Otavio Leão      | 1      |
 | Tales Cavalcanti | 2      |
 | Victor Julius    | 3      |
 | Pedro Henrique   | 4      |
@@ -44,24 +44,70 @@ Isso dá previsibilidade ao processo e facilita o trabalho de várias pessoas no
 
 ## Os tipos de branches:
 
-O modelo define cinco tipos de branches, divididos entre **permanentes** e **temporárias**.
+# 3. Pull Requests, Code Review e CiCd
 
 ### Branches permanentes:
 
-| Branch | Função |
-|--------|--------|
-| `main` (ou `master`) | Contém o código em produção. Cada commit aqui representa uma versão liberada. |
-| `develop` | Reúne todo o trabalho concluído que entrará na próxima versão. É a base de integração. |
+## O Pull Request (PR)
 
 ### Branches temporárias:
 
-| Branch | Origem | Volta para | Função |
-|--------|--------|-----------|--------|
-| `feature/*` | `develop` | `develop` | Desenvolvimento de novas funcionalidades. |
-| `release/*` | `develop` | `develop` e `main` | Preparação de uma nova versão (ajustes finais, testes). |
-| `hotfix/*` | `main` | `develop` e `main` | Correção urgente de um bug em produção. |
+Um bom PR costuma ter:
 
----
+- Um **título claro** do que foi feito.
+- Uma **descrição** explicando o porquê da mudança.
+- **Referência ao ticket/issue** relacionado.
+- Uma lista do que foi testado.
+
+> No GitHub esse recurso se chama *Pull Request*; no GitLab, *Merge Request*. A ideia é a mesma.
+
+## Code Review
+
+Antes de o PR ser aprovado, outros desenvolvedores **revisam o código**. O objetivo não é só achar bugs, mas também:
+
+- Garantir que o código segue os padrões do time.
+- Identificar problemas de performance ou segurança.
+- Compartilhar conhecimento (quem revisa aprende sobre aquela parte do sistema).
+- Manter a qualidade e a legibilidade.
+
+### Boas práticas de revisão
+
+- Comentários devem ser **construtivos**, focados no código e não na pessoa.
+- PRs **pequenos** são revisados melhor e mais rápido que PRs gigantes.
+- O autor responde aos comentários e faz ajustes até a aprovação.
+
+## CI/CD
+
+**CI/CD** significa *Continuous Integration* (Integração Contínua) e *Continuous Delivery/Deployment* (Entrega/Implantação Contínua). São pipelines automatizados que rodam a cada PR ou merge.
+
+### Continuous Integration (CI)
+
+Quando alguém abre um PR, o sistema automaticamente:
+
+1. **Roda os testes** automatizados.
+2. **Faz o build** da aplicação.
+3. **Verifica o estilo do código** (linting).
+4. Reporta se algo quebrou.
+
+Assim, o time descobre problemas **antes** do merge, não depois.
+
+### Continuous Delivery/Deployment (CD)
+
+Depois que o código é aprovado e integrado, o pipeline pode:
+
+- Fazer **deploy automático** para um ambiente de testes (staging).
+- Em casos mais maduros, fazer deploy direto para produção.
+
+## Como tudo se conecta ao Git Flow
+
+```
+feature/login  ──>  Pull Request  ──>  Code Review  ──>  CI (testes/build)
+                                                              │
+                                                              ▼
+                                                   merge na develop  ──>  CD (deploy staging)
+```
+
+Ferramentas comuns nesse processo: **GitHub Actions**, **GitLab CI**, **Jenkins**, **CircleCI**.
 
 # 5. Boas práticas e erros comuns
 
