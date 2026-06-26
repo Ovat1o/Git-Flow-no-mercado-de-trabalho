@@ -61,6 +61,14 @@ O modelo define cinco tipos de branches, divididos entre **permanentes** e **tem
 | `release/*` | `develop` | `develop` e `main` | Preparação de uma nova versão (ajustes finais, testes). |
 | `hotfix/*` | `main` | `develop` e `main` | Correção urgente de um bug em produção. |
 
+## Fluxo resumido
+
+1. Uma nova funcionalidade nasce de `develop` em uma branch `feature/`.
+2. Concluída, ela volta (merge) para `develop`.
+3. Quando há funcionalidades suficientes, cria-se uma `release/` a partir de `develop`.
+4. A release é testada, ajustada e enviada para `main` (vira uma versão oficial) e também de volta para `develop`.
+5. Se um bug crítico aparece em produção, um `hotfix/` corrige direto a partir de `main`.
+
 ---
 
 # 3. Pull Requests, Code Review e CiCd
