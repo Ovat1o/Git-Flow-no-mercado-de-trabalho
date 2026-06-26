@@ -71,7 +71,7 @@ O modelo define cinco tipos de branches, divididos entre **permanentes** e **tem
 
 ## Por que ainda é relevante
 
-Mesmo com alternativas mais simples surgindo, o Git Flow continua sendo ensinado e usado porque oferece uma estrutura disciplinada — especialmente útil em projetos com **versões bem definidas**, **prazos de release** e **equipes maiores**.
+Mesmo com alternativas mais simples surgindo, o Git Flow continua sendo ensinado e usado porque oferece uma estrutura disciplinada — especialmente útil em projetos com **versões bem definidas, prazos de release e equipes maiores**.
 
 ---
 
