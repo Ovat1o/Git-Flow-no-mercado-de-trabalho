@@ -40,15 +40,16 @@ tipo(escopo opcional): descrição
 [corpo opcional]
 ```
 
-Principais tipos
-Tipo Quando usar
-`feat` Nova funcionalidade
-`fix` Correção de bug
-`docs` Mudanças na documentação
-`style` Formatação, sem mudar lógica
-`refactor` Refatoração de código
-`test` Adição ou ajuste de testes
-`chore` Tarefas de manutenção (build, deps)
+Principais tipos e quando usar
+
+- `feat` Nova funcionalidade
+- `fix` Correção de bug
+- `docs` Mudanças na documentação
+- `style` Formatação, sem mudar lógica
+- `refactor` Refatoração de código
+- `test` Adição ou ajuste de testes
+- `chore` Tarefas de manutenção (build, deps)
+
 Exemplos
 
 ```bash
@@ -60,9 +61,12 @@ git commit -m "docs: atualiza instruções de instalação no README"
 Além de organizar o histórico, esse padrão permite gerar changelogs automaticamente e ajuda no versionamento.
 Versionamento semântico (SemVer)
 O Semantic Versioning define versões no formato `MAJOR.MINOR.PATCH` (ex: `2.4.1`):
-MAJOR — mudanças incompatíveis com versões anteriores (quebram código existente).
-MINOR — novas funcionalidades compatíveis com o que já existe.
-PATCH — correções de bugs compatíveis.
+
+`MAJOR` - mudanças incompatíveis com versões anteriores (quebram código existente).
+
+`MINORP` - novas funcionalidades compatíveis com o que já existe.
+
+`PATCH` correções de bugs compatíveis.
 Exemplo de evolução:
 
 ```
@@ -78,7 +82,7 @@ git push origin v1.2.0
 
 ---
 
-### ✅ Boas práticas gerais
+## Boas práticas gerais
 
 - **Commits pequenos e atômicos**: cada commit deve realizar apenas uma mudança.
 - **Commit com frequência**, mas apenas de código que esteja funcionando.
@@ -87,7 +91,7 @@ git push origin v1.2.0
 - **Remova branches já mescladas** para evitar poluição no repositório.
 - **Escreva um bom README** explicando o propósito, configuração e uso do projeto.
 
-### ❌ Erros comuns
+## Erros comuns
 
 - **Branches muito grandes ou de longa duração**: aumentam a chance de conflitos durante o merge.
 - **Mensagens de commit vagas**: termos como `ajustes`, `wip` ou `teste` não descrevem claramente a alteração realizada.
@@ -96,14 +100,3 @@ git push origin v1.2.0
 - **Misturar mudanças não relacionadas** em um mesmo commit ou Pull Request.
 - **Ignorar o code review**: aprovar PRs sem uma análise adequada compromete a qualidade do código.
 - **Não sincronizar a branch com a `develop`** regularmente, acumulando divergências e conflitos.
-
-## 📌 Resumo
-
-O **Git Flow** funciona melhor quando acompanhado de disciplina e boas práticas:
-
-- Utilização de **Conventional Commits** para padronização das mensagens.
-- Adoção de **SemVer (Versionamento Semântico)** para controle de versões.
-- Criação de **commits pequenos e bem definidos**.
-- Atenção aos erros mais comuns do fluxo de trabalho.
-
-São esses detalhes que diferenciam um repositório amador de um repositório profissional.
