@@ -104,8 +104,8 @@ Depois de concluída e revisada, a branch é integrada de volta à `develop` (ge
 
 A grande vantagem das branches é permitir que **várias pessoas trabalhem ao mesmo tempo** sem atrapalhar umas às outras:
 
-- A Heloísa desenvolve `feature/cadastro-usuario`.
-- O João desenvolve `feature/dashboard`.
+- O Otávio desenvolve `feature/cadastro-usuario`.
+- O Victor desenvolve `feature/dashboard`.
 - A Maria corrige `hotfix/erro-pagamento`.
 
 Cada um tem seu ambiente isolado. O código só "se encontra" no momento do merge.
